@@ -3,6 +3,7 @@
     margin: 0; /* override automatic styling browser has set*/ 
     padding:0;
     outline:none; /*specifying no blue borders around inputs*/
+    text-decoration: none;
 }
 
 
@@ -13,7 +14,6 @@ overflow-x:hidden; /*anything larger than the body will be hidden and will not a
 }
 
 h1 {
-    font-family: 'Great Vibes', cursive;
     font-weight: 700;
     font-size: 600%;        
 }
@@ -42,14 +42,14 @@ a:hover {
 i {
     font-size: 50px;
     margin: 10px 30px;
-    color: #ccc;
+    color:white;
+    /* color: #ccc; */
 }
 
 
 p {
     line-height: 1.5em;
     font-size: 200%;
-    font-family: ;
     font-family: 'Raleway', sans-serif;
  
 
@@ -75,19 +75,24 @@ alternate between left and rigth text and iage boxes
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100vw; 
-    background-color: #fcf0d0;;
-    color: #ccc;   
+    background-color: #fcf0d0;
+}
+
+.row h1 {  /* what does this control? */
+    font-size: 3rem;
 }
 
 
-.hfont{  /* another utility class*/
-    font-family: Arial, Helvetica, sans-serif;
+/* another utility class, where is this in HTML?
+.hfont{  
+    font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    font-family: 'Roboto', sans-serif;
     margin-bottom: 2vw;
     font-size: 100%;
     color: black;
 }
+*/
+
  .welcome {
     box-sizing: border-box; /* causes width and height to consider padding when rendering it, it doesnt add the 20*/
     position: relative;
@@ -109,7 +114,10 @@ alternate between left and rigth text and iage boxes
     margin:1vw;
 }
 
+.welcome h1 {
+    font-family: 'Great Vibes', sans-serif
 
+}
 
 .aboutme{ 
     display: flex;
@@ -119,6 +127,12 @@ alternate between left and rigth text and iage boxes
     justify-content: space-between;
 }
 
+.aboutme-head {
+    background-color: #fcf0d0;
+    text-align: right;
+    color: #77766F;
+    font-family: 'Great Vibes', sans-serif;
+}
 
 
 .aboutme div{
@@ -130,6 +144,7 @@ alternate between left and rigth text and iage boxes
     background-color:white;
     color:black;
     font-size: 100%;
+    background-color: #fcf0d0;
 }
 
 
@@ -142,32 +157,30 @@ alternate between left and rigth text and iage boxes
     padding: 4vh;
 }
 
+.projects-head {
+    font-size: 1 rem;
+    background-color: #fcf0d0;
+    color: #77766F;
+
+
+
+}
+
+.projects-header {
+    font-family: 'Great Vibes', sans-serif;
+
+}
 
 .projects{
     display: flex;
     flex-direction: row; 
-    justify-content: space-between;
+    justify-content: space-evenly;
      width: 90%;
      max-width: 120%;
      padding: 5vw; 
-     background-color: #F4D888;
-     color: black;    
+     background-color: #fcf0d0;
     }
      
-.projects h1 {
-    padding: 4vh;
-    font-size: 100%;
-
-    
-}
-
-.projects p {
-    font-size: 100%;
-
-
-}
-
-
 
 .reverse{
     display: flex;
@@ -175,21 +188,24 @@ alternate between left and rigth text and iage boxes
     padding: 5vw; 
     color: black;
     justify-content: space-between;
-    background-color: #F4D888;
+    background-color: #fcf0d0;
 }
 
- 
+.projects p {
+    font-size: 1rem;
+}
+
 .projects div{       /* governs the text boxes in projects*/
     align-self: center; /*top of the flex container*/ 
     padding: 2vw;
     max-width: 40%; /* the about me box wont grow any larger than 60%, if it took whole row it would push my img to next row*/
     text-align: center;
-    background-color:white;
+    background-color: #fcf0d0;
     color:black;
     font-size: 100%; /* font size will take up 100% of the text box*/
-    background-color:red;
-
 }
+
+
 
 
 .blog{
@@ -204,9 +220,11 @@ alternate between left and rigth text and iage boxes
 }
 
 .contact{
-     box-sizing: border-box; 
+     /* box-sizing: border-box; 
+     position: relative; */
      position: relative;
-     display: block;
+     top: 50%;
+     left:50%
      width: 100vw;
      height: 100vh; 
      padding: 5vw;
@@ -219,11 +237,25 @@ alternate between left and rigth text and iage boxes
   margin: 10px;
   padding: 20px;
   border-radius: 20px;
+  align-content: center;
+
 }
+
+.contact h1 {
+    text-align: right;
+    color: white;
+    font-family: 'Great Vibes', sans-serif;
+
+
+}
+
 
 .social {
     font-size: 3vw;
 }
+
+
+
 /****************************************************************************************************************************************************************/
 
 
@@ -257,11 +289,14 @@ attributes are in html href = "" , color= "*/
  box-shadow: 0px 0px 0px 0px;
  margin: 1vw;
  background-color: none;
- border: 2px solid white ;
- font-size: 200%;
- font-family: ;
+ /* border: 2px solid white ; */
+ font-size: 100%;
+ font-family: 'Raleway', sans-serif;
  transition: .3s;
  cursor: pointer;
+ color: black;
+ /* border: 1px solid black; */
+
 }
 
 /* i can add pseudoclasses to classes with semicolon. selcected ,in focus or focus pseudoclass: text input areas  */
@@ -276,7 +311,10 @@ attributes are in html href = "" , color= "*/
 #footer {
     text-align: center;
     background-color: #bf7585;
-    padding: 10px;
+    padding: 30px;
+    margin: 10px;
+    font-weight: bold;
+    
 }
 /* look at codepen for sticky header*/
 /* using hamburger as a large box, called a modal 
@@ -323,7 +361,7 @@ width: 100vw;
     z-index: 1001;
     padding:1vw ;
     background-color: none;
-    border: 2px solid white ;
+    border: 2px solid black ;
     cursor: pointer;
     border-radius: .5vw;
 

@@ -10,7 +10,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="index2.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
@@ -33,11 +32,14 @@
                     About  
                 </li>
             </a>
-            <li>
+            <a href="#scroll" onclick="hideBurger()">
+         
+            <li> 
                 Projects
             </li>
+          </a>
             <li>
-                Blog
+                Home
             </li>
             <li>
                 Contact
@@ -52,24 +54,27 @@
 
 
     <div class="welcome">
-      <h1>Linda Ojinnaka</h1> 
+      <h1>Linda Ojinnaka...</h1> 
       <p>Software Developer based in Sydney</p>
-        <div class="social">
+        <div class="social ">
             <a href="https://linkedin.com/XXX"><i class="fa fa-linkedin"></i></a>
             <a href="https://github.com/XXX"><i class="fa fa-github"></i></a>
             <a href="https://twitter.com/XXX"><i class="fa fa-twitter"></i></a>
         </div>
-       <a href="#scroll"><div id="welcomeButton">Find out more!</div></a>   
+       <a href="#scroll"><div id="welcomeButton"> find out more </div></a>   
         </div>
 
 
 
+        <div class="aboutme-head">
+          <h1>...about </h1>
+        </div>
 
 
     <div class="row">
       <div id="scroll" class="aboutme">
         <div>
-            <h1>About Me</h1> <!--parent can only see the children, about me is the child of row, h1 p image are the children of about me.-->
+            <!-- <h1>ABOUT ME</h1> parent can only see the children, about me is the child of row, h1 p image are the children of about me. -->
                 <p>
                     Hi there, I'm a software developer based in Sydney, Australia. Im originally from Houston, Texas
                     and taught yoga for five years before deciding to move to Sydney, Australia in 2018. It was in 
@@ -77,7 +82,8 @@
                     at Coder Academy, I was given the opportunity to dive deep into my passion of front and back end 
                     development.
                     <br>
-                    In my spare time, Im either practicing my coding skills, teaching yoga classes, or reading.  
+                    <br>
+                    In my spare time, Im either practicing my coding skills, teaching yoga classes, or volunteering.  
                 </p>
         </div>
         <img id="mainImage" src="assets/IMG_7248.JPG" alt="me at the computer">
@@ -91,22 +97,17 @@
 
 
 
-
-
-
-
-
-
-
-
-
+<div class="projects-head">
+  <h1 class="projects-header">...projects</h1>
+</div>
 
 
 
     <div class="row">
+  
       <div id="scroll" class="projects">
         <div>
-            <h1>My Pocket Wellness App</h1> <!--parent can only see the children, about me is the child of row, h1 p image are the children of about me.-->
+            <h1>Pocket Wellness App</h1> <!--parent can only see the children, about me is the child of row, h1 p image are the children of about me.-->
               <p>
                 My pocket Wellness App is a Ruby terminal application I built that customizes a yoga 
                 routine for office workers based on variables such as time, location and mental state. Office workers 
@@ -114,25 +115,27 @@
                 This application was really fun to build, since it combined my passion of coding and yoga into one application.  
               </p>
         </div>
-        <img id="mainImage2" src="assets/IMG_7248.JPG" alt="me at the computer">
+        <img id="mainImage2" src="assets/standinrailspic.png" alt="me at the computer">
       </div>
       <div id="scroll" class="projects reverse ">
         <div>
             <h1>My Portfolio Website</h1> <!--parent can only see the children, about me is the child of row, h1 p image are the children of about me.-->
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quasi id quisquam incidunt repellendus inventore, velit neque reprehenderit voluptas laudantium voluptates sit ipsam fugiat consectetur necessitatibus omnis? Mollitia, magnam atque.
+            My Portfolio website was created using HTML and CSS. I wanted my website to be fun and a reflection of my personality while 
+            also displaying my experience and skills with the HTML and CSS tech stack.
           </p>
         </div>
-        <img id="mainImage2" src="assets/IMG_7248.JPG" alt="me at the computer">
+        <img id="mainImage2" src="assets/portfoliobanner.png" alt="me at the computer">
       </div>
       <div id="scroll" class="projects">
         <div>
-            <h1>Ruby on Rails Marketplace</h1> <!--parent can only see the children, about me is the child of row, h1 p image are the children of about me.-->
+            <h1>Dog Match Marketplace</h1> <!--parent can only see the children, about me is the child of row, h1 p image are the children of about me.-->
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus maxime harum explicabo facilis voluptates debitis quos cumque laudantium, veritatis deserunt, illo, eligendi quaerat ullam? Praesentium, sit. Velit ratione explicabo voluptatem.
+                Dog Match is a rails application that matched dog shelters with people interested in pet adoption. My love of dogs inspired me to create 
+                a marketplace where people in NSW can search for a specific dog breeds and be matched to a local shelter that has their breed of choice. 
               </p>
         </div>
-        <img id="mainImage2" src="assets/IMG_7248.JPG" alt="me at the computer">
+        <img id="mainImage2" src="assets/adoptbanner.jpg" alt="me at the computer">
       </div>
     </div> 
 
@@ -151,90 +154,17 @@
 
 
 
-    <!-- <div class="row">
-        <div id="scroll" class="projects reverse">
-          <div>
-              <h1>About Me</h1> <!--parent can only see the children, about me is the child of row, h1 p image are the children of about me.-->
-                <!--  <p> 
-                      Hi there, I'm a software developer based in Sydney, Australia. Im originally from Houston, Texas
-                      and taught yoga for five years before deciding to move to Sydney, Australia in 2018. It was in 
-                      Sydney where I discovered my passion for coding. After being awarded the Women in Tech Scholarship
-                      at Coder Academy, I was given the opportunity to dive deep into my passion of front and back end 
-                      development.
-                      <br>
-                      In my spare time, Im either practicing my coding skills, teaching yoga classes, or reading.  
-                  </p> -->
-         <!-- </div>
-          <img id="mainImage" src="assets/IMG_7248.JPG" alt="me at the computer">
-          <!-- <ul>
-             <li><i class="fa fa-html5"></i></li>
-             <li><i class="fa fa-css3"></i></li>
-          </ul> -->
-        <!--</div>
-      </div> 
-
-      <div class="row">
-        <div id="scroll" class="projects">
-          <div>
-              <h1>About Me</h1> <!--parent can only see the children, about me is the child of row, h1 p image are the children of about me.-->
-                 <!--- <p>
-                      Hi there, I'm a software developer based in Sydney, Australia. Im originally from Houston, Texas
-                      and taught yoga for five years before deciding to move to Sydney, Australia in 2018. It was in 
-                      Sydney where I discovered my passion for coding. After being awarded the Women in Tech Scholarship
-                      at Coder Academy, I was given the opportunity to dive deep into my passion of front and back end 
-                      development.
-                      <br>
-                      In my spare time, Im either practicing my coding skills, teaching yoga classes, or reading.  
-                  </p>
-          </div>
-          <img id="mainImage" src="assets/IMG_7248.JPG" alt="me at the computer">
-           <ul>
-             <li><i class="fa fa-html5"></i></li>
-             <li><i class="fa fa-css3"></i></li>
-          </ul> -->
-       <!-- </div>
-      </div> <div class="row">
-        <div id="scroll" class="projects reverse">
-          <div>
-              <h1>About Me</h1> <!--parent can only see the children, about me is the child of row, h1 p image are the children of about me.-->
-                <!--- <p>
-                      Hi there, I'm a software developer based in Sydney, Australia. Im originally from Houston, Texas
-                      and taught yoga for five years before deciding to move to Sydney, Australia in 2018. It was in 
-                      Sydney where I discovered my passion for coding. After being awarded the Women in Tech Scholarship
-                      at Coder Academy, I was given the opportunity to dive deep into my passion of front and back end 
-                      development.
-                      <br>
-                      In my spare time, Im either practicing my coding skills, teaching yoga classes, or reading.  
-                  </p>
-          </div>
-          <img id="mainImage" src="assets/IMG_7248.JPG" alt="me at the computer">
-          <!-- <ul>
-             <li><i class="fa fa-html5"></i></li>
-             <li><i class="fa fa-css3"></i></li>
-          </ul> -->
-        <!--</div>
-      </div> 
-
-    <!-- <div class="projects"> 
-        <h1>Projects</h1> 
-        <div class="row">
-            <span class="card"> 
-                Project 1
-             </span>
-            <span class="card"> Project 2 </span>
-            <span class="card"> Project 3 </span>
-        </div> 
-       -->
+   
       
     
     
-
+<!-- 
     <div class="blog">
       <h1>Blog</h1> 
-    </div>
+    </div> -->
 
     <div class="contact">
-      <h1>Let's Connect</h1>
+      <h1>...contact</h1>
       <div class="container">
         <form action="action_page.php">
           <input type="text" id="fname" name="firstname" placeholder="Your name.."><br/>
@@ -244,6 +174,8 @@
         </form>
       </div>
   </div>
+
+
 
   <div id="footer">
   FOOTER &copy; &nbsp; &nbsp; &nbsp; 2020 Linda Ojinnaka 
