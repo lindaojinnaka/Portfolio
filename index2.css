@@ -147,28 +147,48 @@ alternate between left and rigth text and iage boxes
     display: flex;
     flex-direction: row; 
     justify-content: space-between;
-     width: 100vw;
-     height: 100vh;
+     width: 90%;
+     max-width: 120%;
      padding: 5vw; 
      background-color: #F4D888;
      color: black;    
     }
      
+.projects h1 {
+    padding: 4vh;
+    font-size: 100%;
 
-.reverse{
-    flex-direction: row-reverse;
+    
+}
+
+.projects p {
+    font-size: 100%;
+
+
 }
 
 
-.projects div{
+
+.reverse{
+    display: flex;
+    flex-direction: row-reverse; 
+    padding: 5vw; 
+    color: black;
+    justify-content: space-between;
+    background-color: #F4D888;
+}
+
+ 
+.projects div{       /* governs the text boxes in projects*/
     align-self: center; /*top of the flex container*/ 
     padding: 2vw;
-    max-width: 60%; /* the about me box wont grow any larger than 60%, if it took whole row it would push my img to next row*/
+    max-width: 40%; /* the about me box wont grow any larger than 60%, if it took whole row it would push my img to next row*/
     text-align: center;
-    border-radius: 20px;
     background-color:white;
     color:black;
-    font-size: 100%;
+    font-size: 100%; /* font size will take up 100% of the text box*/
+    background-color:red;
+
 }
 
 
@@ -215,10 +235,16 @@ attributes are in html href = "" , color= "*/
 #mainImage {
     position: relative;
     display: block;
-    background-color: red;
     width: 400px; 
     height: 500px;
     border-radius: 50%; 
+}
+
+#mainImage2 {
+    position: relative;
+    display: block;
+    height: 300px;
+    border-radius: none; 
 }
 
 
