@@ -27,25 +27,20 @@
     <div id="hamburger"> 
         
         <ul>
-            <a href="#scroll" onclick="hideBurger()"> <!--when i click the button itll make the hamburger menu go away, all main menu buttons need the onclick*/--> 
+           <a href="#scroll" onclick="hideBurger()"> <!--when i click the button itll make the hamburger menu go away, all main menu buttons need the onclick*/-->   
                 <li>
-                    About  
-                </li>
-            </a>
-            <a href="#scroll" onclick="hideBurger()">
-         
-            <li> 
-                Projects
-            </li>
-          </a>
+                  About
+                  </li> 
+            </a>   
+            <a href="#prj" onclick="hideBurger()"> <!--when i click the button itll make the hamburger menu go away, all main menu buttons need the onclick*/-->   
             <li>
-                Home
-            </li>
-            <li>
-                Contact
-            </li>
+              Projects
+              </li> 
+        </a>      
+                 
+                      
+      
         </ul>
-
     </div>
 
 
@@ -65,17 +60,15 @@
         </div>
 
 
-
         <div class="aboutme-head">
-          <h1>...about </h1>
+          <h2>...about </h2>
         </div>
 
 
     <div class="row">
       <div id="scroll" class="aboutme">
         <div>
-            <!-- <h1>ABOUT ME</h1> parent can only see the children, about me is the child of row, h1 p image are the children of about me. -->
-                <p>
+                 <p>
                     Hi there, I'm a software developer based in Sydney, Australia. Im originally from Houston, Texas
                     and taught yoga for five years before deciding to move to Sydney, Australia in 2018. It was in 
                     Sydney where I discovered my passion for coding. After being awarded the Women in Tech Scholarship
@@ -87,27 +80,23 @@
                 </p>
         </div>
         <img id="mainImage" src="assets/IMG_7248.JPG" alt="me at the computer">
-        <!-- <ul>
-           <li><i class="fa fa-html5"></i></li>
-           <li><i class="fa fa-css3"></i></li>
-        </ul> -->
       </div>
     </div> 
 
 
 
 
-<div class="projects-head">
-  <h1 class="projects-header">...projects</h1>
+<div class="projects-head" id= "prj">
+  <h2>...projects</h2>
 </div>
 
 
 
     <div class="row">
   
-      <div id="scroll" class="projects">
+      <div class="projects"> 
         <div>
-            <h1>Pocket Wellness App</h1> <!--parent can only see the children, about me is the child of row, h1 p image are the children of about me.-->
+            <h2 class="raleway">Pocket Wellness App</h2> <!--parent can only see the children, about me is the child of row, h2 p image are the children of about me.-->
               <p>
                 My pocket Wellness App is a Ruby terminal application I built that customizes a yoga 
                 routine for office workers based on variables such as time, location and mental state. Office workers 
@@ -115,27 +104,27 @@
                 This application was really fun to build, since it combined my passion of coding and yoga into one application.  
               </p>
         </div>
-        <img id="mainImage2" src="assets/standinrailspic.png" alt="me at the computer">
+        <img src="assets/standinrailspic.png" alt="me at the computer">
       </div>
-      <div id="scroll" class="projects reverse ">
+      <div class="projects reverse ">
         <div>
-            <h1>My Portfolio Website</h1> <!--parent can only see the children, about me is the child of row, h1 p image are the children of about me.-->
+            <h2 class="raleway">My Portfolio Website</h2> <!--parent can only see the children, about me is the child of row, h2 p image are the children of about me.-->
           <p>
             My Portfolio website was created using HTML and CSS. I wanted my website to be fun and a reflection of my personality while 
             also displaying my experience and skills with the HTML and CSS tech stack.
           </p>
         </div>
-        <img id="mainImage2" src="assets/portfoliobanner.png" alt="me at the computer">
+        <img src="assets/portfoliobanner.png" alt="me at the computer">
       </div>
-      <div id="scroll" class="projects">
+      <div class="projects">
         <div>
-            <h1>Dog Match Marketplace</h1> <!--parent can only see the children, about me is the child of row, h1 p image are the children of about me.-->
+            <h2 class="raleway">Dog Match Marketplace</h2> <!--parent can only see the children, about me is the child of row, h2 p image are the children of about me.-->
               <p>
                 Dog Match is a rails application that matched dog shelters with people interested in pet adoption. My love of dogs inspired me to create 
                 a marketplace where people in NSW can search for a specific dog breeds and be matched to a local shelter that has their breed of choice. 
               </p>
         </div>
-        <img id="mainImage2" src="assets/adoptbanner.jpg" alt="me at the computer">
+        <img src="assets/adoptbanner.jpg" alt="me at the computer">
       </div>
     </div> 
 
@@ -160,16 +149,20 @@
     
 <!-- 
     <div class="blog">
-      <h1>Blog</h1> 
+      <h2>Blog</h2> 
     </div> -->
 
+
+    <div class="contact-head" id= "con">
+      <h2>...contact</h2>
+    </div>
+    
     <div class="contact">
-      <h1>...contact</h1>
       <div class="container">
         <form action="action_page.php">
           <input type="text" id="fname" name="firstname" placeholder="Your name.."><br/>
           <input type="text" id="email" name="email" placeholder=" Email.."><br/>
-          <textarea id="subject" name="subject" placeholder="Enter your message here" style="height:200px"></textarea><br/>
+          <textarea id="subject" name="subject" placeholder="Enter your message here" ></textarea><br/>
           <input type="submit" value="Connect">
         </form>
       </div>
@@ -201,3 +194,13 @@
 </html>
 
  
+
+<!-- Notes:
+
+you only need one h2 in a page, bevause of accessibility and google ranking. 
+the title of the page would be called and the next heading (h2) will be called
+-the baseline of text is a line that touches the bottom of all the letters a b c d e f h i k l m n o s t u v w x z (baseline i 
+can see a clear line at bottom, stylized fonts go past the baseline because they expect you to use it in a large area, 
+when this happens add padding https://www.w3schools.com/tags/canvas_textbaseline.asp)
+
+-on click event is to show and hide menu , then linked it to the id itll scroll to the positiion of the elem-->

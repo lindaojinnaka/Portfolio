@@ -13,9 +13,18 @@ max-width: 100vw; /*making sure the body cant get wider than 100% viewport and i
 overflow-x:hidden; /*anything larger than the body will be hidden and will not allow scrolling */
 }
 
-h1 {
+h1, h2 ,h3, h4, h5, h6  {
     font-weight: 700;
-    font-size: 600%;        
+    font-family: 'Great Vibes', sans-serif;     
+}
+
+h1 {
+    font-size: 6rem;
+
+}
+
+h2 {
+    font-size: 5rem;
 }
 
 /* keep all semantics at the top to take precedence, ids at the bottom tsakes precedence, last element wins , important is last */
@@ -131,6 +140,8 @@ alternate between left and rigth text and iage boxes
     background-color: #fcf0d0;
     text-align: right;
     color: #77766F;
+    padding: 0 5vw; /* padding 0 is top and bottom 5 vw left and right ,padding will push things towards the center of a container */
+    padding-top: 5vh; /* pushes away from the top of welcome*/
     font-family: 'Great Vibes', sans-serif;
 }
 
@@ -153,21 +164,26 @@ alternate between left and rigth text and iage boxes
 
 }
 
-.aboutme h1{
-    padding: 4vh;
-}
+
+
 
 .projects-head {
     font-size: 1 rem;
     background-color: #fcf0d0;
     color: #77766F;
-
-
-
+    font-family: 'Great Vibes', sans-serif;
+    padding: 5vw; /* affects 0 is y axis top and bottom, and 2 is x axis left and right*/
+    padding-top: 20vh; 
 }
 
-.projects-header {
-    font-family: 'Great Vibes', sans-serif;
+
+
+
+.raleway {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    margin: 2vw;
+
 
 }
 
@@ -232,12 +248,22 @@ alternate between left and rigth text and iage boxes
      color: black;     
 }
 
-.contact input, textarea{
+
+/* absolute, fixed, relative are commonly used. fixed if scroll  it wont go anywhere, relative is relative to parent 
+and all other elements next to it (its default) absolute will ignore any relative positioning and makes thing stack on 
+top of each other 
+
+absolute- when i want something to stay put and isnt influenced by other object, it ignores them. opposite of relative
+fixed (hamburger stays put) */
+input, textarea{
+display: block;
+position: relative;
   width: 50%;
-  margin: 10px;
-  padding: 20px;
-  border-radius: 20px;
-  align-content: center;
+  margin: 3px auto; 
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid white;
 
 }
 
@@ -248,6 +274,17 @@ alternate between left and rigth text and iage boxes
 
 
 }
+
+
+.contact-head {
+    font-size: 1 rem;
+    background-color: #bf7585;
+    color: white;
+    font-family: 'Great Vibes', sans-serif;
+    padding: 5vw; /* affects 0 is y axis top and bottom, and 2 is x axis left and right*/
+    padding-top: 20vh; 
+}
+
 
 
 .social {
@@ -272,7 +309,7 @@ attributes are in html href = "" , color= "*/
     border-radius: 50%; 
 }
 
-#mainImage2 {
+.projects img {
     position: relative;
     display: block;
     height: 300px;
@@ -371,6 +408,10 @@ width: 100vw;
     background-color: #fcf0d0;
     color: black;
 
+}
+
+#subject {
+    min-height: 10vh; /* if user types itll keep growing*/
 }
 
  /****************************************************************************************************************************************************************/ 
