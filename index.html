@@ -1,112 +1,180 @@
+
 <!DOCTYPE html>
 <html lang="en">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-        </style>
-            
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-   
+    <title>Linda | Home</title>
+    <link rel="stylesheet" href="reset.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="index2.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+    </style>
+    <script type="text/javascript">
+      var ham = "closed";
 
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html" >Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="cv.html">CV</a></li>
-            
-            </ul>
-        </nav>
-    </header>
-<!--This is an HTML comment -->
+      function toggleBurger() {
+        if (ham == "closed") {
+          showBurger();
+        } else {
+          hideBurger();
+        }
+      }
+
+      function showBurger() {
+        ham = "open";
+        document.getElementById("hamburger").style.transform = "translateY(100vh)";
+      }
+
+      function hideBurger() {
+        ham = "closed";
+        document.getElementById("hamburger").style.transform = "translateY(-100vh)";
+      }
+    </script>
+  </head>
+  <body>
+    <div id="hamButton" onclick="toggleBurger()">Menu</div>
+    <div id="hamburger"> 
+      <ul>
+        <li><a href="#top" onclick="hideBurger()">Home</a></li> 
+        <li><a href="#about" onclick="hideBurger()">About</a></li> 
+        <li><a href="#prj" onclick="hideBurger()">Projects</a></li> 
+        <li><a href="#contact" onclick="hideBurger()">Contact</a></li> 
+        <li><a href="cv.html" onclick="hideBurger()">Cv</a></li>
+      </ul>
+    </div>
+
+    <!------------------------------------------------------------------------>
+
+    <div class="welcome" id="top">
+      <h1>Linda Ojinnaka...</h1> 
+      <p>Software Developer based in Sydney</p>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/linda-ojinnaka-6548501a9/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/lindaojinnaka"><i class="fab fa-github"></i></a>
+        <!-- <a href="https://twitter.com/lindaojinnaka"><i class="fab fa-twitter-square"></i></a> -->
+      </div>
+      <a href="#about"><div id="welcomeButton"> find out more </div></a>   
+    </div>
+
+    <!------------------------------------------------------------------------>
+
+    <div class="aboutme-head" id="about">
+      <h2>...about</h2>
+    </div>
+
     <div class="row">
-            <div class= "about-me">
-                <h2 id="hFont">
-                    About Me
-                </h2>
-                <p > 
-                    Hi there, I'm a software developer based in Sydney, Australia. Im originally from Houston, Texas
-                    and taught yoga for five years before deciding to move to Sydney, Australia in 2018. It was in 
-                    Sydney where I discovered my passion for coding. After being awarded the Women in Tech Scholarship
-                    at Coder Academy, I was given the opportunity to dive deep into my passion.
+      <div class="aboutme">
+        <div>
+          <p>
+            Hi there! I'm a software developer based in Sydney, Australia. I'm originally from Houston, Texas
+            and was a yoga teacher for five years before deciding to move to Sydney, Australia in 2018. It was in 
+            Sydney where I discovered my passion for coding. After being awarded the Women in Tech Scholarship
+            at Coder Academy, I was given the opportunity to dive deep into my passion of front and back end 
+            development.
+            <br>
+            <br>
+            In my spare time, Im either practicing my coding skills, teaching yoga classes, or volunteering.  
+          </p>
+        </div>
+        <img id="mainImage" src="assets/IMG_7248.JPG" alt="me at the computer">
+      </div>
+    </div> 
 
-                    In my spare time, Im either practicing my coding skills, teachng yoga classes, or reading. 
-                </p>
-            </div>     
-            <div class="image-wrapper">
-                <img id="main-image" src="assets/undraw 2.png" alt = "me at the computer">
-            </div>
+    <div class="tech-stack ">
+      <i class="fab fa-js-square"></i>
+      <i class="fab fa-css3-alt"></i>
+      <i class="fab fa-js"></i>
+      <i class="fas fa-gem"></i>
+      <i class="fab fa-react"></i>
+      <i class="fab fa-node-js"></i>
+      <i class="fas fa-database"></i>
     </div>
 
-    <div class="row">  
-        <a href="projects.html">
-            <div class="image-wrapper">
-                <img src="assets/tty-prompt.png" alt = "me at the computer">
-                <h2>My Pocket Wellness Application</h2>
-                <p>
-                    Nam turpis ante, ultrices sit amet convallis sit amet, posuere
-                     nec orci. Phasellus sit amet aliquet tellus. Aliquam feugiat dui
-                      at tellus bibendum ultrices eu eu libero. Praesent sodales arcu in cursus euismod. Maecenas volutpat neque nec sollicitudin tristique.
+    <!------------------------------------------------------------------------>
 
-                </p>
-
-                
-            </div>       
-        </a>
-        <a href="projects.html">
-            <div class="image-wrapper">
-                <img src="assets/portfolio-image 2.png" alt = "me at the computer">
-                <h2>Portfolio</h2>
-                <p>
-                    Nam turpis ante, ultrices sit amet convallis sit amet, posuere
-                     nec orci. Phasellus sit amet aliquet tellus. Aliquam feugiat dui
-                      at tellus bibendum ultrices eu eu libero. Praesent sodales arcu in cursus euismod. Maecenas volutpat neque nec sollicitudin tristique.
-
-                </p>
-
-            </div>         
-        </a>
-        <a href="projects.html">
-            <div class="image-wrapper">
-                <img src="assets/Chico.jpg" alt = "me at the computer">
-            </div>      
-            <h2>Pet Shop Marketplace</h2>
-            <p>
-                Nam turpis ante, ultrices sit amet convallis sit amet, posuere
-                 nec orci. Phasellus sit amet aliquet tellus. Aliquam feugiat dui
-                  at tellus bibendum ultrices eu eu libero. Praesent sodales arcu in cursus euismod. Maecenas volutpat neque nec sollicitudin tristique.
-
-            </p>
-        </a>
+    <div class="projects-head" id="prj">
+      <h2>...projects</h2>
     </div>
-    <div id="footer">
-    <div class="row icons">  
-        <a href="projects.html">
-            <div class="image-wrapper">
-                <img src="assets/twitter-icon 2.png" alt = "me at the computer">
-            </div>       
-        </a>
-        <a href="projects.html">
-            <div class="image-wrapper">
-                <img src="assets/github-icon 2.png" alt = "me at the computer">
-            </div>         
-        </a>
-        <a href="projects.html">
-            <div class="image-wrapper">
-                <img src="assets/linkedin-icon.png" alt = "me at the computer">
-            </div>      
-        </a>
+
+    <div class="projects">
+      <div>
+        <h2 class="raleway">My Pocket Wellness App</h2> 
+        <p>
+          My pocket Wellness App is a Ruby terminal application I built that
+          customizes a yoga routine for office workers based on variables such
+          as time, location and mental state. Office workers would be able to
+          select whether they have as little time from 15 minutes to a whole
+          break of an hour to practice different yoga stretches. 
+          This application was really fun to build, since it combined my passion
+          of coding and yoga into one application.  
+          <br>
+          <br>
+          <a href="https://github.com/lindaojinnaka/terminal-app">View Source</a>
+        </p>
+      </div>
+      <img src="assets/appshot.png" alt="me at the computer">
     </div>
-  
-        This is the footer
+
+    <div class="projects reverse">
+      <div>
+        <h2 class="raleway">My Portfolio Website</h2> 
+        <p>
+          My Portfolio website was created using HTML and CSS. I wanted my
+          website to be fun and a reflection of my personality while 
+          also displaying my experience and skills with the HTML and CSS tech
+          stack.
+          <br>
+          <br>
+          <a href="https://github.com/lindaojinnaka/newportfolio">View Source</a>
+        </p>
+      </div>
+      <img src="assets/portfoliobanner.png" alt="me at the computer">
     </div>
-</body>
+
+    <div class="projects">
+      <div>
+        <h2 class="raleway">Dog Match Marketplace</h2> 
+        <p>
+          Dog Match is a rails application that matched dog shelters with people
+          interested in pet adoption. My love of dogs inspired me to create 
+          a marketplace where people in NSW can search for a specific dog breeds
+          and be matched to a local shelter that has their breed of choice. 
+        </p>
+        <br>
+          <br>
+          <a href="https://github.com/lindaojinnaka/rails-app-deploy">View Source</a>
+      </div>
+      <img src="assets/adoptbanner.jpg" alt="me at the computer">
+    </div> 
+
+    <!------------------------------------------------------------------------>
+
+    <div class="contact-head" id="contact">
+      <h2>...contact</h2>
+    </div>
+    
+    <div class="contact">
+      <div class="container">
+        <form action="action_page.php">
+          <input type="text" id="fname" name="firstname" placeholder="Your name.."><br/>
+          <input type="text" id="email" name="email" placeholder=" Email.."><br/>
+          <textarea id="subject" name="subject" placeholder="Enter your message here" ></textarea><br/>
+          <input type="submit" value="Connect">
+        </form>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------>
+
+    <div id="footer">&copy; 2020 Linda Ojinnaka</div>
+
+  </body>
 </html>
+
+ 

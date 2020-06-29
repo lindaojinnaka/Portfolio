@@ -1,16 +1,15 @@
-/* * wildcard applies to everything */
 *{
-    margin: 0; /* override automatic styling browser has set*/ 
-    padding:0;
-    outline:none; /*specifying no blue borders around inputs*/
+    margin: 0; 
+    padding: 0;
+    outline: none; 
     text-decoration: none;
 }
 
 
 body {
-scroll-behavior: smooth; /*scrolls the page slowly i can see everything go by*/
-max-width: 100vw; /*making sure the body cant get wider than 100% viewport and if it fdoes, make it sure its hidden*/
-overflow-x:hidden; /*anything larger than the body will be hidden and will not allow scrolling */
+    scroll-behavior: smooth; 
+    max-width: 100vw; 
+    overflow-x: hidden; 
 }
 
 h1, h2 ,h3, h4, h5, h6  {
@@ -20,66 +19,41 @@ h1, h2 ,h3, h4, h5, h6  {
 
 h1 {
     font-size: 6rem;
-
 }
 
 h2 {
     font-size: 5rem;
 }
 
-/* keep all semantics at the top to take precedence, ids at the bottom tsakes precedence, last element wins , important is last */
 a:link {
-
-
+    color: black;
 }
 
 a:visited {
-
-
+    color: black;
 }
 
 a:active {
-
+    color: black;
 }
 
 a:hover {
-
-
+    color: black;
 }
 
-
-i {
+ /* i {
     font-size: 50px;
     margin: 10px 30px;
-    color:white;
-    /* color: #ccc; */
-}
-
+    color: white;
+} */
 
 p {
     line-height: 1.5em;
     font-size: 200%;
     font-family: 'Raleway', sans-serif;
- 
-
 }
 
-/* only targets p box in welcome  
-embrace extra space
-alternate between left and rigth text and iage boxes
-    <h3 class= "findout"> - dont wrap things in headers, use a div when wrapping things because they have no styles
-    -i can target buttons with no class or id, just use semantic name buttton and it woiuld target all buttons 
-    use id tpo target specific one*/
-
-    /* i can use astericks inside of selectors to apply styles within the parent but not to the parent */
-
-
-
- /****************************************************************************************************************************************************************/ 
- /****************************************************************************************************************************************************************/   
-
-
- .row{   /*parent container, targets the whole container. flex properties can only see its direct children. utility class- using it serve repetitive function*/
+.row {   
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -87,48 +61,39 @@ alternate between left and rigth text and iage boxes
     background-color: #fcf0d0;
 }
 
-.row h1 {  /* what does this control? */
+.row h1 {  
     font-size: 3rem;
 }
 
-
-/* another utility class, where is this in HTML?
-.hfont{  
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    margin-bottom: 2vw;
-    font-size: 100%;
-    color: black;
+.test {
+    border: 1px solid red;
+    background: orange;
 }
-*/
 
- .welcome {
-    box-sizing: border-box; /* causes width and height to consider padding when rendering it, it doesnt add the 20*/
+.welcome {
+    box-sizing: border-box; 
     position: relative;
     display: flex;
-    width: 100vw; /*the div will span the entire width of the page */ 
-    height: 100vh; /*to touch all sides of the browser, complete width and heighth of the screen*/
+    width: 100vw; 
+    height: 100vh; 
     background-color: #bf7585;
     color: white;
-    padding: 20vw; /* we want things to be spaced far away from the sides of the edges of the browser, adds to width and height*/
+    padding: 20vw; 
     text-align: center;
     align-items: center;
-    flex-direction: column;  /* flex treats everything like its in a row- flex direction column algns in a coloumn*/
+    flex-direction: column;  
 }
 
-
-
-.welcome p{  
-    color:black;
-    margin:1vw;
+.welcome p {  
+    color: black;
+    margin: 1vw;
 }
 
 .welcome h1 {
     font-family: 'Great Vibes', sans-serif
-
 }
 
-.aboutme{ 
+.aboutme { 
     display: flex;
     flex-direction: row-reverse; 
     padding: 5vw; 
@@ -140,65 +105,71 @@ alternate between left and rigth text and iage boxes
     background-color: #fcf0d0;
     text-align: right;
     color: #77766F;
-    padding: 0 5vw; /* padding 0 is top and bottom 5 vw left and right ,padding will push things towards the center of a container */
-    padding-top: 5vh; /* pushes away from the top of welcome*/
+    padding: 0 5vw; 
+    padding-top: 5vh;
     font-family: 'Great Vibes', sans-serif;
 }
 
-
-.aboutme div{
-    align-self: center; /*top of the flex container*/ 
+.aboutme div {
+    align-self: center; 
     padding: 2vw;
-    max-width: 60%; /* the about me box wont grow any larger than 60%, if it took whole row it would push my img to next row*/
+    max-width: 60%; 
     text-align: center;
     border-radius: 20px;
-    background-color:white;
     color:black;
     font-size: 100%;
     background-color: #fcf0d0;
 }
 
-
-.aboutme p{
+.aboutme p {
     font-size: 120%;
+}
+
+.tech-stack  {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 200%;
+    background-color: #fcf0d0;
+    color: black;
+
 
 }
 
 
+
+.tech-stack i {
+    margin-right: 40px; 
+    font-size: 50px;
+}
 
 
 .projects-head {
-    font-size: 1 rem;
+    font-size: 1rem;
     background-color: #fcf0d0;
     color: #77766F;
     font-family: 'Great Vibes', sans-serif;
-    padding: 5vw; /* affects 0 is y axis top and bottom, and 2 is x axis left and right*/
+    padding: 5vw;
     padding-top: 20vh; 
 }
-
-
-
 
 .raleway {
     font-family: 'Raleway', sans-serif;
     font-size: 2rem;
     margin: 2vw;
-
-
+    white-space: nowrap; 
 }
 
-.projects{
+.projects {
     display: flex;
     flex-direction: row; 
     justify-content: space-evenly;
-     width: 90%;
-     max-width: 120%;
-     padding: 5vw; 
-     background-color: #fcf0d0;
-    }
-     
+    width: 90%;
+    max-width: 120%;
+    padding: 5vw; 
+    background-color: #fcf0d0;
+}
 
-.reverse{
+.reverse {
     display: flex;
     flex-direction: row-reverse; 
     padding: 5vw; 
@@ -211,18 +182,15 @@ alternate between left and rigth text and iage boxes
     font-size: 1rem;
 }
 
-.projects div{       /* governs the text boxes in projects*/
-    align-self: center; /*top of the flex container*/ 
+.projects div {       
+    align-self: center;
     padding: 2vw;
-    max-width: 40%; /* the about me box wont grow any larger than 60%, if it took whole row it would push my img to next row*/
+    max-width: 40%; 
     text-align: center;
     background-color: #fcf0d0;
-    color:black;
-    font-size: 100%; /* font size will take up 100% of the text box*/
+    color: black;
+    font-size: 100%; 
 }
-
-
-
 
 .blog{
      box-sizing: border-box; 
@@ -235,9 +203,7 @@ alternate between left and rigth text and iage boxes
      color: black;
 }
 
-.contact{
-     /* box-sizing: border-box; 
-     position: relative; */
+.contact {
      position: relative;
      top: 50%;
      left:50%
@@ -248,58 +214,35 @@ alternate between left and rigth text and iage boxes
      color: black;     
 }
 
-
-/* absolute, fixed, relative are commonly used. fixed if scroll  it wont go anywhere, relative is relative to parent 
-and all other elements next to it (its default) absolute will ignore any relative positioning and makes thing stack on 
-top of each other 
-
-absolute- when i want something to stay put and isnt influenced by other object, it ignores them. opposite of relative
-fixed (hamburger stays put) */
 input, textarea{
-display: block;
-position: relative;
-  width: 50%;
-  margin: 3px auto; 
-  padding: 10px;
-  border-radius: 10px;
-  text-align: center;
-  border: 1px solid white;
-
+    display: block;
+    position: relative;
+    width: 50%;
+    margin: 3px auto; 
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid white;
 }
 
 .contact h1 {
     text-align: right;
     color: white;
     font-family: 'Great Vibes', sans-serif;
-
-
 }
 
-
 .contact-head {
-    font-size: 1 rem;
+    font-size: 1em;
     background-color: #bf7585;
     color: white;
     font-family: 'Great Vibes', sans-serif;
-    padding: 5vw; /* affects 0 is y axis top and bottom, and 2 is x axis left and right*/
+    padding: 5vw; 
     padding-top: 20vh; 
 }
-
-
 
 .social {
     font-size: 3vw;
 }
-
-
-
-/****************************************************************************************************************************************************************/
-
-
-/* #main would be the selecter
-properties would be position 
-attributes are in html href = "" , color= "*/
-/* pixels dont change as you shrink the screen, percentages and vh vw because theyre relative sizing  */
 
 #mainImage {
     position: relative;
@@ -314,53 +257,38 @@ attributes are in html href = "" , color= "*/
     display: block;
     height: 300px;
     border-radius: none; 
+    margin-top: 10vh;
 }
-
 
 #welcomeButton {
- max-width: 30vw; /* 1/3 of the screem */
- padding: 1vw; /*applies to all 4 sides*/
- padding-left: 2.5vw; /*this overides it*/
- padding-right: 2.5vw; 
- border-radius: .5vw;
- box-shadow: 0px 0px 0px 0px;
- margin: 1vw;
- background-color: none;
- /* border: 2px solid white ; */
- font-size: 100%;
- font-family: 'Raleway', sans-serif;
- transition: .3s;
- cursor: pointer;
- color: black;
- /* border: 1px solid black; */
-
+    max-width: 30vw; 
+    padding: 1vw; 
+    padding-left: 2.5vw; 
+    padding-right: 2.5vw; 
+    border-radius: .5vw;
+    box-shadow: 0px 0px 0px 0px;
+    margin: 1vw;
+    background-color: none;
+    font-size: 100%;
+    font-family: 'Raleway', sans-serif;
+    transition: .3s;
+    cursor: pointer;
+    color: black;
 }
 
-/* i can add pseudoclasses to classes with semicolon. selcected ,in focus or focus pseudoclass: text input areas  */
 #welcomeButton:hover {
     background-color: #fcf0d0;
     color: black;
-
 }
-
-
 
 #footer {
     text-align: center;
     background-color: #bf7585;
     padding: 30px;
-    margin: 10px;
+    background-color: #fcf0d0;
     font-weight: bold;
-    
 }
-/* look at codepen for sticky header*/
-/* using hamburger as a large box, called a modal 
-making it take up whole page 
--100vh pushes off screen, pulling itself up
-width: 100vw;
-    height: 100vh; its always 100 percent of the display
-    opacity let us see through and see text in background 
-    z-indexpushing everything to to[p, google photo shop layers  */
+
 #hamburger {
     position: fixed;
     display: block;
@@ -370,10 +298,8 @@ width: 100vw;
     height: 100vh;
     background-color: #bf7585;
     opacity: .8;
-    z-index: 1000; /*we want it at very top*/
-    transition: .5s; /*it slides in rather than appear*/
-
-
+    z-index: 1000; 
+    transition: .5s; 
 }
 
 #hamburger ul {
@@ -381,13 +307,11 @@ width: 100vw;
     justify-content: space-around;
     align-content: center;
     height: 100%;
-
 }
 
-#hamburger li, #hamburger a { /*targeted the a tag in li otherwise it would go to the top*/
+#hamburger li, #hamburger a { 
     display: flex;
     align-items: center;
-
 }
 
 #hamButton {
@@ -401,32 +325,24 @@ width: 100vw;
     border: 2px solid black ;
     cursor: pointer;
     border-radius: .5vw;
-
 }
 
 #hamButton:hover {
     background-color: #fcf0d0;
     color: black;
-
 }
 
 #subject {
-    min-height: 10vh; /* if user types itll keep growing*/
+    min-height: 10vh; 
 }
 
- /****************************************************************************************************************************************************************/ 
- /****************************************************************************************************************************************************************/ 
-
-
-@media only screen and (max-width:900px) {   /*looks at the width of my browser , you can style the screen differently accrding to the browser 
-                                                width.anything less than 900px, watch out for the keyboard on mobile devices changing the screen size*/
+@media only screen and (max-width:900px) {   
 
 #mainImage {
     position: relative;
     display: block;
     background-color: red;
-    width: 90vw; /* when im on a small screen itll take up the whole row and push elements to the next row, in this case the text box */
-    
-    }
+    width: 90vw; 
+}
 
 }
