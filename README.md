@@ -16,8 +16,7 @@ br>
 **Component 3:** Footer
 <br>
 
-<br> 
-<br> 
+
 
 ## Target Audience
 The target audience is interested employers and recruitment agencies. My portfolio is intended to demonstrate my abilities in diferrent tech stachs to potential employers.
