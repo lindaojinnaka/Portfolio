@@ -1,7 +1,7 @@
 # newportfolio
 Github repo:lindaojinnaka/Portfolio
 
-Website: https://lindaojinnaka.github.io/portfolio/
+Website: https://lindaojinnaka.github.io/portfolio-site/
 <br> 
 <br> 
 ## Purpose
