@@ -340,8 +340,7 @@ input, textarea{
 
 #mainImage {
     position: relative;
-    display: block;
-    background-color: red;
+    display: flex;
     width: 90vw; 
 }
 
