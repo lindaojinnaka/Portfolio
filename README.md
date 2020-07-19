@@ -1,4 +1,4 @@
-# newportfolio
+# Portfolio
 Github repo:lindaojinnaka/Portfolio
 
 Website: https://lindaojinnaka.github.io/portfolio-site/
