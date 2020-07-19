@@ -44,3 +44,4 @@ Github was utilized for version control and website deployment.
 Javascript was also used for the drop down link functionality. 
 
 ## Site Map 
+![site-map](./assets/sitemap.png)
