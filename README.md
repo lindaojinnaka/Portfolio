@@ -45,3 +45,17 @@ Javascript was also used for the drop down link functionality.
 
 ## Site Map 
 ![site-map](./assets/sitemap.png)
+
+## Screenshots 
+Home Page 
+
+![site-map](./assets/Homepage.png)
+
+About Me
+![site-map](./assets/Aboutme.png)
+
+Projects 
+![site-map](./assets/Projects.png)
+
+Contact
+![site-map](./assets/Contact.png)
